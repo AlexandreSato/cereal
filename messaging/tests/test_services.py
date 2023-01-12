@@ -5,7 +5,7 @@ import unittest
 from parameterized import parameterized
 
 import cereal.services as services
-from cereal.services import service_list, RESERVED_PORT, STARTING_PORT
+from openpilot.cereal.services import service_list, RESERVED_PORT, STARTING_PORT
 
 
 class TestServices(unittest.TestCase):

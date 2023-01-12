@@ -7,8 +7,8 @@ import capnp
 from typing import Optional, List, Union
 from collections import deque
 
-from cereal import log
-from cereal.services import service_list
+from openpilot.cereal import log
+from openpilot.cereal.services import service_list
 
 assert MultiplePublishersError
 assert MessagingError
