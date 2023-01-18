@@ -217,6 +217,7 @@ struct CarState {
 
   # AleSato stuff
   engineRPM @46 :Float32;
+  alwaysONSteeringAssistOn @47 :Bool; # Always ON LKAS Toggle ..
 
   struct WheelSpeeds {
     # optional wheel speeds
