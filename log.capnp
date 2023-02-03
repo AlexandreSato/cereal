@@ -621,6 +621,7 @@ struct ControlsState @0x97ff69c53601abf1 {
   state @31 :OpenpilotState;
   enabled @19 :Bool;
   active @36 :Bool;
+  distanceTraveled @66 :Float32;
 
   experimentalMode @64 :Bool;
 
