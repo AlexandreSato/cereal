@@ -110,7 +110,11 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     localizerMalfunction @103;
     highCpuUsage @105;
     cruiseMismatch @106;
+
+    # AleSato events 
     manualSteeringRequired @116;
+    steerSaturated2 @117;
+
     lkasDisabled @107;
     canBusMissing @111;
     controlsdLagging @112;
