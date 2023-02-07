@@ -113,7 +113,8 @@ struct CarEvent @0x9b1657f34caf3ad3 {
 
     # AleSato events 
     manualSteeringRequired @116;
-    steerSaturated2 @117;
+    steerAlwaysEngageSound @117;
+    steerAlwaysDisengageSound @118;
 
     lkasDisabled @107;
     canBusMissing @111;
