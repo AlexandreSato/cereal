@@ -111,9 +111,9 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     cruiseMismatch @106;
 
     # AleSato events 
-    manualSteeringRequired @116;
-    steerAlwaysEngageSound @117;
-    steerAlwaysDisengageSound @118;
+    manualSteeringRequired @117;
+    steerAlwaysEngageSound @118;
+    steerAlwaysDisengageSound @119;
 
     lkasDisabled @107;
     canBusMissing @111;
