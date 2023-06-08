@@ -22,12 +22,6 @@ enum LongitudinalPersonality {
     standard @1;
     relaxed @2;
   }
-
-enum LongitudinalPersonality {
-    aggressive @0;
-    standard @1;
-    relaxed @2;
-  }
   
 struct InitData {
   kernelArgs @0 :List(Text);
