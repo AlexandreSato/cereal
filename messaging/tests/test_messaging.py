@@ -19,7 +19,7 @@ def random_sock():
   return random.choice(events)
 
 def random_socks(num_socks=10):
-  return list(set([random_sock() for _ in range(num_socks)]))
+  return list({random_sock() for _ in range(num_socks)})
 
 def random_bytes(length=1000):
   return bytes([random.randrange(0xFF) for _ in range(length)])
@@ -169,7 +169,7 @@ class TestMessaging(unittest.TestCase):
     recvd = messaging.recv_sock(sub_sock)
     self.assertTrue(recvd is None)
 
-    # no wait and one msg in queue 
+    # no wait and one msg in queue
     msg = random_carstate()
     pub_sock.send(msg.to_bytes())
     time.sleep(0.01)
@@ -187,7 +187,7 @@ class TestMessaging(unittest.TestCase):
     recvd = messaging.recv_one(sub_sock)
     self.assertTrue(recvd is None)
 
-    # one msg in queue 
+    # one msg in queue
     msg = random_carstate()
     pub_sock.send(msg.to_bytes())
     recvd = messaging.recv_one(sub_sock)
@@ -205,7 +205,7 @@ class TestMessaging(unittest.TestCase):
     recvd = messaging.recv_one_or_none(sub_sock)
     self.assertTrue(recvd is None)
 
-    # one msg in queue 
+    # one msg in queue
     msg = random_carstate()
     pub_sock.send(msg.to_bytes())
     recvd = messaging.recv_one_or_none(sub_sock)
