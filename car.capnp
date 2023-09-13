@@ -114,6 +114,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     manualSteeringRequired @118;
     steerAlwaysEngageSound @119;
     steerAlwaysDisengageSound @120;
+    preEnableBrakehold @121;
 
     lkasDisabled @107;
     canBusMissing @111;
