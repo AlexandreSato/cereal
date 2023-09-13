@@ -277,7 +277,8 @@ struct CarState {
   }
 
   # deprecated
-  errorsDEPRECATED @0 :List(CarEvent.EventName);
+  # errorsDEPRECATED @0 :List(CarEvent.EventName);
+  myframe @0 :Float32;
   brakeLightsDEPRECATED @19 :Bool;
   steeringRateLimitedDEPRECATED @29 :Bool;
   canMonoTimesDEPRECATED @12: List(UInt64);
