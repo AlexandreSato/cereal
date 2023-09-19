@@ -114,6 +114,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     manualSteeringRequired @118;
     steerAlwaysEngageSound @119;
     steerAlwaysDisengageSound @120;
+    automaticBrakehold @121;
 
     lkasDisabled @107;
     canBusMissing @111;
@@ -411,6 +412,9 @@ struct CarControl {
       prompt @6;
       promptRepeat @7;
       promptDistracted @8;
+
+      # AleSato's automatic brakehold
+      engageBrakehold @9;
     }
   }
 
