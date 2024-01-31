@@ -2,11 +2,8 @@
 
 #include <set>
 #include <string>
-#include <vector>
-#include <unistd.h>
 
 #include "cereal/messaging/messaging.h"
-#include "cereal/visionipc/visionipc.h"
 #include "cereal/visionipc/visionbuf.h"
 
 class VisionIpcClient {
@@ -18,8 +15,6 @@ private:
 
   cl_device_id device_id = nullptr;
   cl_context ctx = nullptr;
-
-  void init_msgq(bool conflate);
 
 public:
   bool connected = false;
